@@ -20,6 +20,11 @@
 
 body {
     background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(circle at 10% 0%, rgba(107, 33, 168, 0.25) 0%, transparent 50%),
+        radial-gradient(circle at 90% 20%, rgba(67, 97, 238, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 50% 100%, rgba(107, 33, 168, 0.25) 0%, transparent 50%);
+    background-attachment: fixed;
     color: var(--text-primary);
     font-family: var(--font-sans);
     line-height: 1.6;
@@ -132,6 +137,21 @@ nav {
 
 .nav-links a:hover, .nav-links a.active {
     color: var(--text-primary);
+}
+
+/* Profile Picture */
+.profile-pic-placeholder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.profile-pic-placeholder img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color); /* Adds a nice blue border around the image */
 }
 
 /* Hero Section */
@@ -344,47 +364,9 @@ nav {
     position: relative;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
-}
-
-.contact-form {
-    background-color: var(--bg-color);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    color: var(--text-primary);
-    font-family: inherit;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-    border-color: var(--accent-color);
-}
-
-textarea {
-    height: 150px;
-    resize: none;
-}
-
-.contact-form .btn {
-    width: 100%;
-    border-radius: 8px;
-    padding: 1rem;
+.contact-card-container {
+    display: flex;
+    justify-content: center;
 }
 
 .contact-info {
@@ -405,10 +387,37 @@ textarea {
     font-size: 0.9rem;
 }
 
+.centered-info {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    padding: 6rem 4rem;
+}
+
+.centered-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.centered-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.centered-info .info-item {
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+}
+
+.centered-info .social-links {
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .social-link {
@@ -425,6 +434,22 @@ textarea {
 .social-link:hover {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
+}
+
+.centered-info .social-link {
+    width: 80px;
+    height: 80px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.centered-info .social-icon {
+    width: 45px;
+    height: 45px;
 }
 
 .status-badge {
@@ -465,7 +490,6 @@ textarea {
     #about .container, .project-grid { grid-template-columns: 1fr; }
     .skills-grid, .services-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
-    .contact-grid { grid-template-columns: 1fr; } /* Stack contact columns on mobile */
 }
 .price{
     
