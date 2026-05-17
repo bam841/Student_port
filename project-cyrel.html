@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyrel Learning Center LMS | John Abrahm Zapico</title>
+    <meta name="description" content="Case study for Cyrel Learning Center LMS, a school-oriented web application built with PHP, PostgreSQL, HTML, CSS, and JavaScript.">
+    <meta name="author" content="John Abrahm Zapico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+    <a href="index.html#work" class="floating-back">Back to Projects</a>
+    <div class="site-shell">
+        <nav class="site-nav">
+            <a class="brand" href="index.html#top" aria-label="Back to portfolio home">
+                <span class="brand-mark">JAZ</span>
+                <span class="brand-copy">Portfolio</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html#work">Back to Work</a></li>
+                <li><a href="#functionality">Functionality</a></li>
+                <li><a href="#screens">Screenshots</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+
+            <a href="https://github.com/bam841/LMS-CYREL" class="nav-cta" target="_blank" rel="noopener noreferrer">Open Repo</a>
+        </nav>
+
+        <main id="top" class="project-main">
+            <section class="project-hero fade-in">
+                <div class="project-hero-copy">
+                    <p class="eyebrow">Case Study / School LMS</p>
+                    <h1>Cyrel Learning Center LMS</h1>
+                    <p class="project-lead">
+                        A school-oriented web application focused on account access, dashboard entry, and structured academic records.
+                    </p>
+                    <div class="tag-row">
+                        <span>PHP</span>
+                        <span>PostgreSQL</span>
+                        <span>Supabase</span>
+                        <span>HTML / CSS / JS</span>
+                    </div>
+                </div>
+
+                <div class="project-hero-media">
+                    <img
+                        src="assets/cyrel-lms-login.png"
+                        alt="Cyrel Learning Center LMS login screen"
+                        class="project-hero-shot"
+                        width="400"
+                        height="600"
+                    >
+                </div>
+            </section>
+
+            <section class="project-grid">
+                <article class="project-card fade-in" id="functionality">
+                    <p class="eyebrow">Functionality</p>
+                    <h2>What this web app does</h2>
+                    <ul class="project-list">
+                        <li>Handles login and account access for school users.</li>
+                        <li>Provides a dashboard entry point after authentication.</li>
+                        <li>Includes password reset and recovery-related pages.</li>
+                        <li>Supports school data areas such as announcements, enrollments, academic years, and payments through the project schema.</li>
+                        <li>Uses a branded UI so the system feels specific to the institution instead of generic admin software.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card fade-in">
+                    <p class="eyebrow">Overview</p>
+                    <h2>Project summary</h2>
+                    <p>
+                        This project stands out because it already shows a real application structure in the repo: PHP pages,
+                        database connection code, dashboard styling, password reset screens, and a SQL dump with school-related tables.
+                    </p>
+                    <p>
+                        It is the kind of project I want more of in my portfolio because it combines interface work with practical data-driven functionality.
+                    </p>
+                </article>
+
+                <article class="project-card fade-in">
+                    <p class="eyebrow">Your Role</p>
+                    <h2>Student developer</h2>
+                    <p>
+                        My role here is best represented as building and shaping a school web app experience that connects
+                        the visual layer with real backend records.
+                    </p>
+                    <ul class="project-list">
+                        <li>Structured the login and entry flow for users.</li>
+                        <li>Worked on dashboard-oriented pages and interface styling.</li>
+                        <li>Connected the app to a PostgreSQL-backed data source.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card fade-in">
+                    <p class="eyebrow">Stack</p>
+                    <h2>Tools used</h2>
+                    <ul class="project-list">
+                        <li>PHP for server-side logic and page flow.</li>
+                        <li>PostgreSQL for the underlying school records.</li>
+                        <li>Supabase-hosted connection details in the repo’s database layer.</li>
+                        <li>HTML, CSS, and JavaScript for the frontend experience.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card project-card-wide fade-in" id="screens">
+                    <p class="eyebrow">Screenshots</p>
+                    <h2>Gallery and visual notes</h2>
+                    <div class="project-gallery" data-gallery>
+                        <div class="gallery-stage">
+                            <button class="gallery-arrow" type="button" data-gallery-prev aria-label="Previous slide">Prev</button>
+                            <div class="gallery-track">
+                                <figure class="gallery-slide is-active">
+                                    <img
+                                        src="assets/cyrel-lms-login.png"
+                                        alt="Cyrel Learning Center LMS login page"
+                                        class="project-screenshot"
+                                        width="400"
+                                        height="600"
+                                        loading="lazy"
+                                    >
+                                    <figcaption>Login screen with a split-layout hero panel and branded school identity.</figcaption>
+                                </figure>
+
+                                <figure class="gallery-slide">
+                                    <img
+                                        src="assets/cyrel-lms-logo.png"
+                                        alt="Cyrel Learning Center logo mark"
+                                        class="project-screenshot project-logo-shot"
+                                        width="500"
+                                        height="500"
+                                        loading="lazy"
+                                    >
+                                    <figcaption>Project identity asset used to reinforce the institution-specific feel of the interface.</figcaption>
+                                </figure>
+                            </div>
+                            <button class="gallery-arrow" type="button" data-gallery-next aria-label="Next slide">Next</button>
+                        </div>
+                        <div class="gallery-dots" aria-label="Gallery navigation">
+                            <button class="gallery-dot is-active" type="button" data-gallery-dot="0" aria-label="View slide 1"></button>
+                            <button class="gallery-dot" type="button" data-gallery-dot="1" aria-label="View slide 2"></button>
+                        </div>
+                    </div>
+                    <div class="screenshot-grid">
+                        <div class="note-card">
+                            <p class="note-label">Gallery Note</p>
+                            <p>
+                                I currently have a login screen and a project identity asset attached locally. More internal screens
+                                can be added later to show dashboards, announcements, and student-facing pages.
+                            </p>
+                        </div>
+
+                        <div class="note-card">
+                            <p class="note-label">Visual Priority</p>
+                            <p>
+                                The strongest current proof here is the branded login interface because it shows both UI intent and
+                                the kind of system entry flow the app is built around.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card fade-in">
+                    <p class="eyebrow">Features</p>
+                    <h2>Main project points</h2>
+                    <ul class="project-list">
+                        <li>Institution-branded login experience.</li>
+                        <li>Role-aware authentication flow.</li>
+                        <li>Password recovery pages.</li>
+                        <li>Student dashboard shell.</li>
+                        <li>Academic and payment-related data structure.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card fade-in">
+                    <p class="eyebrow">Challenges</p>
+                    <h2>What made it interesting</h2>
+                    <ul class="project-list">
+                        <li>Keeping the login page visually branded while still readable and usable.</li>
+                        <li>Organizing school data across multiple related entities such as users, announcements, enrollments, and payments.</li>
+                        <li>Balancing interface design work with backend-connected page logic.</li>
+                    </ul>
+                </article>
+
+                <article class="project-card project-card-wide fade-in" id="links">
+                    <p class="eyebrow">Repo / Links</p>
+                    <h2>Project references</h2>
+                    <div class="project-links">
+                        <a href="https://github.com/bam841/LMS-CYREL" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                        <a href="index.html#work">Back to Portfolio</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="project-pager fade-in" aria-label="Project navigation">
+                <a href="index.html#work" class="pager-card">
+                    <p class="note-label">All Projects</p>
+                    <h3>Return to the portfolio overview</h3>
+                </a>
+                <a href="project-attendance.html" class="pager-card">
+                    <p class="note-label">Next Project</p>
+                    <h3>Attendance Dashboard Contribution</h3>
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,278 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>John Abrahm Zapico | Computer Science Portfolio</title>
-<meta name="description" content="Portfolio of John Abrahm Zapico, a CS student at NU Lipa specializing in PHP, MariaDB, and POS systems.">
-<meta name="keywords" content="John Abrahm Zapico, NU Lipa, Computer Science, Portfolio, Philippines">
-<meta name="author" content="John Abrahm Zapico">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <title>John Abrahm Zapico | Portfolio</title>
+    <meta name="description" content="Portfolio of John Abrahm Zapico, a Computer Science student at NU Lipa building practical web systems with PHP, MariaDB, HTML, CSS, and JavaScript.">
+    <meta name="keywords" content="John Abrahm Zapico, NU Lipa, portfolio, PHP, MariaDB, POS system, Batangas">
+    <meta name="author" content="John Abrahm Zapico">
+    <meta property="og:title" content="John Abrahm Zapico | Portfolio">
+    <meta property="og:description" content="Computer Science student building practical web systems and database-backed projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/mypic.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="site-shell">
+        <nav class="site-nav">
+            <a class="brand" href="#top" aria-label="Go to top">
+                <span class="brand-mark">JAZ</span>
+                <span class="brand-copy">Portfolio</span>
+            </a>
 
-    <nav>
-        <div class="logo">JAZ</div>
-        <ul class="nav-links">
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><href="#services"><a href="#services">Services</a></li>
-        </ul>
-        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">LET'S TALK</a>
-    </nav>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <section id="hero">
-        <div class="container fade-in">
-            <div class="profile-pic-placeholder">
-                <img src="assets/mypic.jpeg" alt="John Abrahm Zapico">
-            </div>
-            <div class="hero-tags">COMPUTER SCIENCE STUDENT · ASPIRING DEVELOPER · ALWAYS CODING</div>
-            <p>Hi, I'm</p>
-            <h1 class="gradient-text">John<br>Abrahm</h1>
-            <p class="hero-subtitle">I build exceptional digital experiences that blend precision engineering with creative design.</p>
-            <div class="hero-buttons">
-                <a href="#work" class="btn btn-outline">VIEW MY WORK</a>
-                <a href="#contact" class="btn btn-primary">GET IN TOUCH</a>
-            </div>
-        </div>
-    </section>
+            <a href="#contact" class="nav-cta">Email Me</a>
+        </nav>
 
-    <section id="about">
-        <div class="container">
-            <div class="quote fade-in">
-                "The best code is the code you don't have to write — but when you do, make it beautiful."
-            </div>
-            <div class="about-text fade-in">
-                <p>I've honed a philosophy that great software sits at the intersection of technical excellence and human-centered design. I don't just write code — I craft experiences.</p>
-                <p>My journey began with a curiosity about how things work under the hood, which evolved into a passion for creating interfaces that feel intuitive and performant. From startup MVPs to enterprise-scale applications, I bring the same dedication to quality and attention to detail.</p>
-                <p>When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or mentoring aspiring developers. I believe in continuous learning and the power of community.</p>
-            
-            </div>
-        </div>
-    </section>
+        <main id="top">
+            <section id="hero" class="hero-section">
+                <div class="hero-copy fade-in">
+                    <p class="eyebrow">NU LIPA / BATANGAS / PRACTICAL WEB SYSTEMS</p>
+                    <h1>John Abrahm Zapico builds clear, useful web experiences backed by real database work.</h1>
+                    <p class="hero-text">
+                        I am a Computer Science student focused on building practical systems, especially PHP and
+                        SQL-backed projects that need clean structure, usable interfaces, and reliable records.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#work" class="btn btn-primary">View Projects</a>
+                        <a href="#about" class="btn btn-secondary">How I Work</a>
+                    </div>
+                </div>
 
-    <section id="work">
-        <div class="container">
-            <span class="section-label fade-in">01 / FEATURED PROJECTS</span>
-            <h2 class="fade-in">Selected Work</h2>
-            
-            <div class="project-grid">
-                <div class="project-card fade-in">
-                    <div class="project-img-placeholder">Dashboard UI Placeholder</div>
-                    <div class="project-info">
-                        <h3>Meridian E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce platform with real-time inventory, AI-powered recommendations, and a seamless checkout experience.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">REACT</span>
-                            <span class="tech-tag">NODE.JS</span>
-                            <span class="tech-tag">POSTGRESQL</span>
-                            <span class="tech-tag">STRIPE</span>
-                            <span class="tech-tag">AWS</span>
+                <aside class="hero-card fade-in">
+                    <div class="portrait-frame">
+                        <img
+                            src="assets/mypic.jpeg"
+                            alt="Portrait of John Abrahm Zapico"
+                            width="942"
+                            height="1548"
+                            fetchpriority="high"
+                        >
+                    </div>
+                    <div class="hero-notes">
+                        <p class="note-label">Current Focus</p>
+                        <p>Building student and personal projects with honest scope, steady UI work, and database-first thinking.</p>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="proof-strip fade-in" aria-label="Quick facts">
+                <p>BS Computer Science</p>
+                <p>PHP</p>
+                <p>PostgreSQL / Supabase</p>
+                <p>HTML / CSS / JavaScript</p>
+                <p>POS and CRUD Systems</p>
+                <p>Based in Batangas</p>
+            </section>
+
+            <section id="work" class="content-section">
+                <div class="section-heading fade-in">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>Projects framed as case notes, not marketing cards.</h2>
+                    <p class="section-intro">
+                        I am showing the kind of work I can explain clearly: what the project was for, what I built,
+                        and which tools I used.
+                    </p>
+                </div>
+
+                <div class="case-list">
+                    <a href="project-cyrel.html" class="case-study-link fade-in">
+                        <article class="case-study">
+                            <div class="case-visual case-visual-pos">
+                                <p class="visual-label">Case 01</p>
+                                <img
+                                    src="assets/cyrel-lms-login.png"
+                                    alt="Cyrel Learning Center LMS login screen"
+                                    class="case-shot"
+                                    width="400"
+                                    height="600"
+                                    loading="lazy"
+                                >
+                                <h3>Cyrel Learning Center LMS</h3>
+                                <p>School LMS / login flow / student-facing dashboard / academic records</p>
+                            </div>
+                            <div class="case-details">
+                                <p class="case-meta">ROLE / Student Developer</p>
+                                <h3>School web app focused on authentication, announcements, enrollments, and payment-related records.</h3>
+                                <p>
+                                    A PHP-based school system with a branded login experience, dashboard views, reset-password flows,
+                                    and a structured backend schema for student and academic information.
+                                </p>
+                                <div class="tag-row">
+                                    <span>PHP</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Supabase</span>
+                                    <span>Dashboard UI</span>
+                                </div>
+                                <p class="case-cta">Open full case study</p>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="project-attendance.html" class="case-study-link fade-in">
+                        <article class="case-study">
+                            <div class="case-visual case-visual-portfolio">
+                                <p class="visual-label">Case 02</p>
+                                <h3>Attendance Dashboard Contribution</h3>
+                                <p>Attendance tracking / team contribution / live dashboard reference / shared build context</p>
+                            </div>
+                            <div class="case-details">
+                                <p class="case-meta">ROLE / Coworker / Contributor</p>
+                                <h3>Contribution work connected to a live attendance dashboard reference rather than a solo-owned product.</h3>
+                                <p>
+                                    This entry shows how I contributed within a shared project setup, helping shape attendance-related
+                                    UI and product direction without overstating ownership of the full system.
+                                </p>
+                                <div class="tag-row">
+                                    <span>Attendance System</span>
+                                    <span>Team Project</span>
+                                    <span>Dashboard Reference</span>
+                                    <span>UI Contribution</span>
+                                </div>
+                                <p class="case-cta">Open full case study</p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+            <section id="about" class="content-section split-section">
+                <div class="section-heading fade-in">
+                    <p class="eyebrow">About</p>
+                    <h2>I want the work to feel useful before it tries to feel impressive.</h2>
+                </div>
+
+                <div class="split-grid">
+                    <div class="statement-card fade-in">
+                        <p>
+                            I am still early in my career, so the strongest version of my portfolio is the honest one.
+                            That means showing what I am actually building now, what tools I am comfortable using, and
+                            how I think about structure, readability, and user flow.
+                        </p>
+                        <p>
+                            I am especially interested in systems that rely on organized data and repeated interactions:
+                            forms, records, transactions, and dashboards that need to stay clear under everyday use.
+                        </p>
+                    </div>
+
+                    <div class="principles-card fade-in">
+                        <p class="note-label">Working Principles</p>
+                        <ul class="principle-list">
+                            <li>Use straightforward copy instead of inflated claims.</li>
+                            <li>Design from the task flow first, then add polish.</li>
+                            <li>Keep code simple enough to maintain without a heavy framework.</li>
+                            <li>Prefer proof of work over self-rated skill percentages.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="timeline" class="content-section">
+                <div class="section-heading fade-in">
+                    <p class="eyebrow">Timeline</p>
+                    <h2>A short view of where the work is coming from.</h2>
+                </div>
+
+                <div class="timeline-list">
+                    <article class="timeline-item fade-in">
+                        <p class="timeline-year">Present</p>
+                        <div>
+                            <h3>BS Computer Science at NU Lipa</h3>
+                            <p>Studying core computing concepts while building coursework and personal projects that improve my frontend and database skills.</p>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="project-card fade-in">
-                    <div class="project-img-placeholder">Design System UI Placeholder</div>
-                    <div class="project-info">
-                        <h3>Nebula Design System</h3>
-                        <p>An open-source component library with 60+ accessible components, theming engine, and comprehensive documentation.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">TYPESCRIPT</span>
-                            <span class="tech-tag">REACT</span>
-                            <span class="tech-tag">STORYBOOK</span>
-                            <span class="tech-tag">TAILWIND</span>
-                            <span class="tech-tag">FIGMA</span>
+                    <article class="timeline-item fade-in">
+                        <p class="timeline-year">Recent Work</p>
+                        <div>
+                            <h3>Database-driven student projects</h3>
+                            <p>Working on CRUD-heavy pages and POS-style flows where clean forms, clear records, and predictable interface behavior matter.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <section id="skills">
-        <div class="container">
-            <span class="section-label fade-in">02 / SKILLS & TOOLS</span>
-            <h2 class="fade-in">My Tech Stack</h2>
-
-            <div class="skills-grid">
-                <div class="skill-category fade-in">
-                    <h3>Frontend</h3>
-                    <p>Building beautiful interfaces</p>
-                    
-                    <div class="skill-item">
-                        <div class="skill-info"><span>React / Next.js</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>TypeScript</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Vue.js / Nuxt</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>HTML5 / CSS3 / Sass</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Tailwind CSS</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-                    </div>
-                </div>
-
-                <div class="skill-category fade-in">
-                    <h3>Backend</h3>
-                    <p>Powering robust systems</p>
-                    
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Node.js / Express</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Python / Django</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>PostgreSQL / MongoDB</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>GraphQL / REST APIs</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Docker / CI/CD</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
-                    </div>
-                </div>
-
-                <div class="skill-category fade-in">
-                    <h3>Design & Tools</h3>
-                    <p>Crafting with precision</p>
-                    
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Figma / Adobe XD</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Git / GitHub</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Webpack / Vite</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>Jest / Cypress</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info"><span>UI/UX Principles</span></div>
-                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <h2 class="fade-in">What I Can Do For You</h2>
-            
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <span class="number">01</span>
-                    <h3>Web Development</h3>
-                    <p>End-to-end development of modern web applications. From concept to deployment, I build fast, accessible, and visually stunning digital products.</p>
-                    <ul class="service-features">
-                        <li>Responsive frontend development</li>
-                        <li>API design & backend integration</li>
-                        <li>Database architecture</li>
-                        <li>Performance optimization</li>
-                    </ul>
-                    <div class="price">STARTING FROM <span>5000</span> pessos</div>
-                </div>
-
-                <div class="service-card fade-in">
-                    <span class="number">02</span>
-                    <h3>Technical Consulting</h3>
-                    <p>Strategic guidance for your technical decisions. I help teams choose the right stack, improve code quality, and scale their applications.</p>
-                    <ul class="service-features">
-                        <li>Architecture review & recommendations</li>
-                        <li>Code audits & refactoring plans</li>
-                        <li>Tech stack evaluation</li>
-                        <li>Team workflow optimization</li>
-                    </ul>
-                    <div class="price">STARTING FROM $1,500</div>
-                </div>
-
-                <div class="service-card fade-in">
-                    <span class="number">03</span>
-                    <h3>Mentorship & Training</h3>
-                    <p>Personalized guidance for developers and teams. From coding fundamentals to advanced patterns, I help you level up your skills.</p>
-                    <ul class="service-features">
-                        <li>1-on-1 coding sessions</li>
-                        <li>Code reviews & feedback</li>
-                        <li>Career guidance</li>
-                        <li>Workshop facilitation</li>
-                    </ul>
-                    <div class="price">STARTING FROM $500</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container fade-in">
-            <div style="text-align: center; margin-bottom: 4rem;">
-                <span class="section-label">07 / CONTACT</span>
-                <h2 class="gradient-text">Let's Build Something</h2>
-                <p style="color: var(--text-secondary);">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
-            </div>
-
-            <div class="contact-card-container">
-                <div class="contact-info centered-info">
-                    <h3>Get in Touch</h3>
-                    <p>I'm currently available for freelance projects and full-time opportunities. Let's discuss how I can help bring your ideas to life.</p>
-                    
-                    <div class="info-item">
-                        zapicojohnabrahm@gmail.com
-                    </div>
-                    <div class="info-item">
-                        Pinagsibaan, Rosario Batangas
-                    </div>
-                    <div class="info-item">
-                    Response time: ~24 hours
-                    </div>
-
-                    <div style="margin-top: 2rem;">
-                        <h4 style="margin-bottom: 1rem;">Follow Me</h4>
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/jnabzp/" target="_blank" class="social-link">
-                                <img src="assets/iglogo.webp" alt="Instagram Icon" class="social-icon">
-                            </a>
-                            <a href="https://www.facebook.com/johnabrahm.zapico.9" target="_blank" class="social-link">
-                                <img src="assets/Logo_de_Facebook.png" alt="Facebook Icon" class="social-icon">
-                            </a>
-                            <a href="#" class="social-link">X</a>
+                    <article class="timeline-item fade-in">
+                        <p class="timeline-year">Ongoing</p>
+                        <div>
+                            <h3>Improving interface quality</h3>
+                            <p>Refining layouts, typography, spacing, and interaction details so the frontend feels intentional instead of copied from a template.</p>
                         </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section contact-section">
+                <div class="contact-panel fade-in">
+                    <p class="eyebrow">Contact</p>
+                    <h2>If you want to see what I am building next, send a message.</h2>
+                    <p class="section-intro">
+                        I am open to conversations about student projects, junior web opportunities, and practical system work where I can keep improving.
+                    </p>
+
+                    <div class="contact-list">
+                        <a href="mailto:zapicojohnabrahm@gmail.com">zapicojohnabrahm@gmail.com</a>
+                        <p>Pinagsibaan, Rosario, Batangas</p>
+                        <p>Response time: around 24 hours</p>
                     </div>
 
-                    <div class="status-badge">
-                        <div class="status-dot"></div>
-                        Available for new projects
+                    <div class="contact-links">
+                        <a href="https://www.instagram.com/jnabzp/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.facebook.com/johnabrahm.zapico.9" target="_blank" rel="noopener noreferrer">Facebook</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
