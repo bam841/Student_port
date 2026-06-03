@@ -262,17 +262,16 @@
                 </div>
 
                 <div class="case-list">
-                    <article class="case-study fade-in" style="grid-template-columns: 1fr;">
-                        <div class="case-visual" style="border-right: none; border-bottom: 1px solid var(--line); min-height: auto; padding: 20px;">
+                    <article class="case-study fade-in" style="display: flex; align-items: center; flex-wrap: wrap; gap: 30px; padding: 40px; border-radius: 40px;">
+                        <div class="badge-visual" style="flex-shrink: 0; width: 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 4px solid var(--accent); box-shadow: 0 0 30px rgba(98, 168, 242, 0.3); background: var(--bg-soft);">
                             <img
                                 src="assets/python-certificate.png"
                                 alt="Python Programming Certificate"
-                                class="case-shot case-shot-wide"
-                                style="max-width: 100%; height: auto; margin: 0 auto;"
+                                style="width: 100%; height: 100%; object-fit: cover; filter: contrast(1.1) saturate(1.2);"
                                 loading="lazy"
                             >
                         </div>
-                        <div class="case-details" style="border-left: 1px solid var(--line); border-radius: 32px;">
+                        <div class="case-details" style="flex: 1; padding: 0; border: none; background: transparent; box-shadow: none; display: grid; gap: 12px;">
                             <p class="case-meta">Certification</p>
                             <h3>Python Programming Certificate</h3>
                             <p>
@@ -284,7 +283,9 @@
                                 <span>Foundations</span>
                                 <span>Programming</span>
                             </div>
-                            <a href="assets/python-certificate.pdf" target="_blank" class="case-cta" style="display: inline-block; margin-top: 20px; border: 1px solid var(--line); padding: 12px 20px; border-radius: 999px;">View Full Certificate (PDF)</a>
+                            <div style="margin-top: 10px;">
+                                <a href="assets/python-certificate.pdf" target="_blank" class="case-cta" style="display: inline-block; border: 1px solid var(--line); padding: 10px 20px; border-radius: 999px; font-size: 0.72rem;">View PDF Certificate</a>
+                            </div>
                         </div>
                     </article>
                 </div>
