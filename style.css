@@ -1,13 +1,13 @@
 :root {
-    --bg: #13110f;
-    --bg-soft: #181512;
-    --surface: rgba(28, 25, 22, 0.88);
-    --surface-strong: #201c18;
-    --line: rgba(243, 237, 228, 0.12);
-    --text: #f3ede4;
-    --muted: #a79d91;
-    --accent: #c96b3b;
-    --accent-soft: #6f7c86;
+    --bg: #08111b;
+    --bg-soft: #0d1726;
+    --surface: rgba(14, 23, 38, 0.88);
+    --surface-strong: #132036;
+    --line: rgba(168, 187, 214, 0.16);
+    --text: #edf4ff;
+    --muted: #94a8c4;
+    --accent: #62a8f2;
+    --accent-soft: #76d2c7;
     --shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
     --font-heading: "Fraunces", serif;
     --font-body: "Space Grotesk", sans-serif;
@@ -27,9 +27,9 @@ html {
 body {
     min-height: 100vh;
     background:
-        radial-gradient(circle at top left, rgba(201, 107, 59, 0.12), transparent 34%),
-        radial-gradient(circle at bottom right, rgba(111, 124, 134, 0.14), transparent 28%),
-        linear-gradient(180deg, #13110f 0%, #110f0d 100%);
+        radial-gradient(circle at top left, rgba(98, 168, 242, 0.14), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(118, 210, 199, 0.12), transparent 28%),
+        linear-gradient(180deg, #08111b 0%, #060d17 100%);
     color: var(--text);
     font-family: var(--font-body);
     line-height: 1.6;
@@ -72,7 +72,7 @@ a {
     padding: 16px 22px;
     border: 1px solid var(--line);
     border-radius: 22px;
-    background: rgba(19, 17, 15, 0.78);
+    background: rgba(8, 17, 27, 0.78);
     backdrop-filter: blur(16px);
 }
 
@@ -104,7 +104,7 @@ a {
     height: 42px;
     border: 1px solid var(--line);
     border-radius: 14px;
-    background: linear-gradient(135deg, rgba(201, 107, 59, 0.24), rgba(111, 124, 134, 0.12));
+    background: linear-gradient(135deg, rgba(98, 168, 242, 0.24), rgba(118, 210, 199, 0.14));
     font-size: 0.84rem;
 }
 
@@ -227,7 +227,7 @@ h3 {
 
 .btn-primary {
     background: var(--accent);
-    color: #160f0b;
+    color: #07111d;
 }
 
 .btn-secondary {
@@ -253,7 +253,7 @@ h3 {
 .portrait-frame {
     overflow: hidden;
     border-radius: 24px;
-    background: linear-gradient(180deg, rgba(201, 107, 59, 0.18), rgba(111, 124, 134, 0.12));
+    background: linear-gradient(180deg, rgba(98, 168, 242, 0.18), rgba(118, 210, 199, 0.12));
     aspect-ratio: 0.8 / 1;
 }
 
@@ -353,6 +353,10 @@ h3 {
     box-shadow: 0 16px 50px rgba(0, 0, 0, 0.22);
 }
 
+.case-shot-wide {
+    max-width: 100%;
+}
+
 .case-visual p:last-child {
     max-width: 28ch;
     color: rgba(243, 237, 228, 0.82);
@@ -360,14 +364,14 @@ h3 {
 
 .case-visual-pos {
     background:
-        linear-gradient(135deg, rgba(201, 107, 59, 0.22), transparent 54%),
-        linear-gradient(180deg, #241a14 0%, #191512 100%);
+        linear-gradient(135deg, rgba(98, 168, 242, 0.24), transparent 54%),
+        linear-gradient(180deg, #132239 0%, #0d1726 100%);
 }
 
 .case-visual-portfolio {
     background:
-        linear-gradient(135deg, rgba(111, 124, 134, 0.28), transparent 52%),
-        linear-gradient(180deg, #171514 0%, #121110 100%);
+        linear-gradient(135deg, rgba(118, 210, 199, 0.2), transparent 52%),
+        linear-gradient(180deg, #111d31 0%, #0a1421 100%);
 }
 
 .case-details {
@@ -447,7 +451,7 @@ h3 {
     padding: 14px 18px;
     border: 1px solid var(--line);
     border-radius: 999px;
-    background: rgba(19, 17, 15, 0.86);
+    background: rgba(8, 17, 27, 0.86);
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
     color: var(--text);
     font-family: var(--font-meta);
@@ -523,7 +527,7 @@ h3 {
 .project-logo-shot {
     max-width: 360px;
     margin: 0 auto;
-    background: linear-gradient(180deg, rgba(201, 107, 59, 0.08), rgba(255, 255, 255, 0.02));
+    background: linear-gradient(180deg, rgba(98, 168, 242, 0.1), rgba(255, 255, 255, 0.02));
 }
 
 .project-hero-reference {
@@ -532,8 +536,8 @@ h3 {
     justify-content: flex-end;
     min-height: 100%;
     background:
-        linear-gradient(135deg, rgba(201, 107, 59, 0.16), transparent 50%),
-        linear-gradient(180deg, #1d1916 0%, #151311 100%);
+        linear-gradient(135deg, rgba(98, 168, 242, 0.16), transparent 50%),
+        linear-gradient(180deg, #112035 0%, #0a1421 100%);
 }
 
 .project-hero-reference h3 {
@@ -589,6 +593,36 @@ h3 {
     height: 6px;
     border-radius: 50%;
     background: var(--accent);
+}
+
+.stack-logo-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    padding-bottom: 6px;
+}
+
+.stack-logo-card {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    padding: 14px 12px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.stack-logo-card figcaption {
+    color: var(--muted);
+    font-family: var(--font-meta);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+}
+
+.stack-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
 }
 
 .project-gallery {
@@ -691,8 +725,8 @@ h3 {
     gap: 14px;
     align-content: end;
     background:
-        linear-gradient(135deg, rgba(111, 124, 134, 0.18), transparent 58%),
-        linear-gradient(180deg, #1a1816 0%, #151311 100%);
+        linear-gradient(135deg, rgba(118, 210, 199, 0.16), transparent 58%),
+        linear-gradient(180deg, #102035 0%, #0a1421 100%);
 }
 
 .project-pager {
@@ -719,6 +753,75 @@ h3 {
     box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
 }
 
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.service-card,
+.services-footer {
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.service-card {
+    display: grid;
+    gap: 16px;
+    padding: 28px;
+}
+
+.service-card p,
+.services-footer p:last-child {
+    color: var(--muted);
+}
+
+.service-list {
+    display: grid;
+    gap: 10px;
+}
+
+.service-list li {
+    position: relative;
+    padding-left: 18px;
+    color: var(--muted);
+}
+
+.service-list li::before {
+    content: "";
+    position: absolute;
+    top: 0.7em;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+}
+
+.service-price {
+    padding-top: 4px;
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+}
+
+.service-note {
+    color: var(--muted);
+    font-size: 0.96rem;
+}
+
+.services-footer {
+    display: grid;
+    gap: 10px;
+    margin-top: 24px;
+    padding: 24px 28px;
+    background:
+        linear-gradient(135deg, rgba(98, 168, 242, 0.12), transparent 54%),
+        var(--surface);
+}
+
 .split-grid {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
@@ -738,7 +841,7 @@ h3 {
 
 .principles-card {
     background:
-        linear-gradient(180deg, rgba(201, 107, 59, 0.08), transparent 34%),
+        linear-gradient(180deg, rgba(98, 168, 242, 0.08), transparent 34%),
         var(--surface);
 }
 
@@ -838,6 +941,8 @@ h3 {
     .project-hero,
     .project-grid,
     .project-pager,
+    .services-grid,
+    .stack-logo-row,
     .screenshot-grid,
     .split-grid,
     .case-study {
@@ -852,6 +957,10 @@ h3 {
 
     .proof-strip {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stack-logo-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .gallery-stage {
@@ -906,6 +1015,10 @@ h3 {
 
     .proof-strip {
         grid-template-columns: 1fr;
+    }
+
+    .stack-logo-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .floating-back {
