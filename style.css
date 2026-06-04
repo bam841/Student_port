@@ -22,6 +22,8 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 110px; /* Offset for sticky navigation bar */
 }
 
 body {
@@ -144,6 +146,8 @@ main {
 .hero-section,
 .content-section {
     padding: 44px 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .hero-section {
